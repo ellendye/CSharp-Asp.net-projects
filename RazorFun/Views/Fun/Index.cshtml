@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor Fun</title>
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">These are some delicious foods</h1>
+    <div style="font-family: Arial, Helvitica, sans-serif; margin-left: 3em;">
+        @{
+            string[] food = {"Apple Pie", "Burritos", "Clams Casino", "Donuts"};
+            foreach(var word in food)
+            {
+                if(word.ToLower()[0] == 'c'){
+                    <p style="color: red;">@word</p>
+                }
+                else{
+                    <p>@word</p>
+                }
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Survey Results";
+}
+
+<div class="container box">
+    <h1>Submitted info: </h1>
+    <table class="table">
+        <tr>
+            <th scope="row">Name: </th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th scope="row">Location: </th>
+            <td>@Model.Location</td>
+        </tr>
+        <tr>
+            <th scope="row">Language: </th>
+            <td>@Model.Language</td>
+        </tr>
+        <tr>
+            <th scope="row">Comment: </th>
+            <td>@Model.Comment</td>
+        </tr>
+    </table>
+</div>

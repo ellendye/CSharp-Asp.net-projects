@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Quoting Dojo";
+}
+
+
+<h1 class="display-4 m-3">Here are the awesome quotes!</h1>
+
+@foreach(var user in ViewBag.Quotes)
+{
+    <div class="text-center">
+        <p class="text-left">"@user["quote"]"</p>
+        <p class="ml-4 font-italic">- @user["name"] @user["created_at"]</p>
+    </div>
+    <hr>
+}
